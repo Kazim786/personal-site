@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>To do list</title>
 </head>
 <body>
-    <h1>It is a weekend</h1>
+    <% if(theDay === "Saturday" || theDay === "Sunday"){ %>
+        <h1 style= "color: green"><%=theDay%> Todo List</h1>
+
+    <% } else{ %>
+        <h1 style= "color: red"><%=theDay%> Todo List</h1>
+    <% } %>
+    
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod ipsum cupiditate nam atque nihil libero optio. Tempore, maxime molestiae! Cupiditate fuga expedita 
         necessitatibus architecto ipsam, sapiente ipsum omnis delectus!</p>
+
+    
 </body>
 </html>
